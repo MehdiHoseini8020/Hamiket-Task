@@ -1,26 +1,12 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Head from "./Components/Main/Header";
+import FormsList from "./Components/Main/FormsList";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="min-h-[100vh] w-screen m-0 p-0 flex flex-col gap-[35px] items-center bg-[#004643]">
+      <Head />
+      <FormsList />
     </div>
   );
 }
-
-export default App;
